@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border-Radius</title>
+    <style>
+      .two-ele {
+        width: 20em;
+        background: #655;
+        padding: 0.8em;
+        margin-bottom: 2em;
+      }
+      .two-ele > div {
+        background: tan;
+        border-radius: 0.8em;
+        padding: 1em;
+      }
+      .one-ele {
+        width: 18.4em;
+        padding: 1em;
+        background: tan;
+        border-radius: 0.8em;
+        box-shadow: 0 0 0 0.6em #655;
+        /* box-shadow: 0 0 0 0.6em red; */
+        outline: 0.8em solid #655;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 两个元素实现内圆角 -->
+    <div class="two-ele">
+      <div>i have a dream.</div>
+    </div>
+
+    <!-- 一个元素实内圆角, 但是定位看起来有点不舒服 -->
+    <div class="one-ele">i want to sleep.</div>
+  </body>
+</html>
