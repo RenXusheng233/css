@@ -7,13 +7,24 @@
     <title>Linear-Gradient</title>
     <style>
       .box {
+        margin-bottom: 1em;
         width: 200px;
         height: 200px;
         background: linear-gradient(-45deg, transparent 1em, #58a 0);
+      }
+
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(-45deg, transparent 1em, #58a 0) right,
+          linear-gradient(45deg, transparent 1em, #655 0) left;
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
       }
     </style>
   </head>
   <body>
     <div class="box"></div>
+    <div class="box2"></div>
   </body>
 </html>
